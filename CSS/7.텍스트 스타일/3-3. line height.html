@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <style>
+     .small-line {line-height:0.7;    /*글자 크기의 0.7배 줄 간격*/}
+      .big-line { line-height:2.5;     /*글자 크기의 2.5배 줄 간격*/}
+
+      .heading {
+      width:100%;  /* 영역 너비 */
+      height:100px;  /* 높이 */
+      background:#222;  /* 배경 색 */
+      color:rgb(255,255,255);  /* 글자 색 */
+      text-align: center; /* 가로 정렬 - 가운데 */
+      line-height: 100px;   /* 세로 정렬 - 가운데. line-height 값과 height 값을 같게 */
+    }
+    
+     p {
+        width:600px;
+        border:1px solid #222;
+        padding:10px;
+        margin:10px;
+      }
+     
+      h1 {
+      font-size:60px;  /* 글자 크기 */
+      font-family:Verdana, Geneva, Tahoma, sans-serif;  /* 글꼴 */
+    }
+
+  
+  </style>
+  
+</head>
+<body>
+  <p>껍질에 붉은 빛이 돌아 레드향(감평甘平)이라 불린다. 
+    레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+  <p class="small-line">껍질에 붉은 빛이 돌아 레드향(감평甘平)이라 불린다. 
+    레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.0.7</p>
+  <p class="big-line">껍질에 붉은 빛이 돌아 레드향(감평甘平)이라 불린다. 
+    레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다. 2.5</p>
+
+  <h1 class="heading">HTML</h1>
+
+  <h2>text-decoration 속성</h2>
+  <p style="text-decoration:none">none</p>
+  <p style="text-decoration:underline">underline</p>
+  <p style="text-decoration:overline">overline</p>
+  <p style="text-decoration:line-through">line through</p>
+</body>
+</html>

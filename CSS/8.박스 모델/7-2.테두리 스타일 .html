@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>박스모델</title>
+	<style>
+    div{ width:150px; height:150px; 
+         border:black 5px solid; margin:30px;
+         display:inline-block; 
+         font-size:20px; line-height:100px ;text-align:center;}
+    .box1{border-style:solid;}
+    .box2{border-style:dotted;}
+    .box3{border-style:dashed;}
+    
+    .box4{border-width:2px;}
+    .box5{border-width: thick thin;}
+    .box6{border-width:thick thin thin thin;}
+    .box7{border-width: 10px 5px 5px 10px;}
+
+    .box8{border-color:red;}
+    .box9{border-color: blue black black red;}
+
+    h1{padding-bottom: 5px; border-bottom:3px solid black; }
+
+    #round{border-radius: 25px;}
+    #circle{border-radius: 50%;}
+    .round1{border: 2px solid blue; 
+           border-top-left-radius:20px; border-top-right-radius:20px;}
+
+  p{padding: 10px; border:blue 2px dotted;}
+	</style>
+</head>
+<body>
+  <div class="box1">실선</div>
+  <div class="box2">점선</div>
+  <div class="box3">짧은 직선</div>
+  <div class="box4">2px</div>
+  <div class="box5">5</div>
+  <div class="box6">6</div>
+  <div class="box7">10 5</div>
+
+  <div class="box8">8</div>
+  <div class="box9">9</div>
+
+  <h1>박스 모델</h1>
+	<p>박스 모델은 실제 콘텐츠 영역, 박스와 콘텐츠 영역 사이의 여백인 
+    패딩(padding), 박스의 테두리(border), 그리고 여러 박스 모델 간의 여백인 
+    마진(margin) 등의 요소로 구성되어 있습니다. </p>	
+
+  <img src="img/cat.jpg">
+  <img id= "round" src="img/cat.jpg">
+
+  <img src="img/photo.jpg">
+  <img id="circle" src="img/photo.jpg">
+
+  <div class="round1">20</div>
+  
+  
+  
+  
+</body>
+</html>

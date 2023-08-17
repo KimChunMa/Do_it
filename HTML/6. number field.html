@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>range</title>
+</head>
+<body>
+  <!-- number 스핀박스를 이용한 숫자입력-->
+<ul>
+  <li>
+    <label><input type="checkbox" value="S-3">선물용 3kg
+    <input type="number" min="0" max="5">개 (최대 5개) 
+    </label>
+    </li>
+  <li>
+    <label><input type="checkbox" value="S-5">선물용 5kg
+      <input type="number" min="1" max="3" value="1">개 (최대 3개) 
+      <!-- 초기값 1개-->
+    </label>
+    </li>
+</ul>
+
+<!-- 슬라이드 막대-->
+<ul>
+  <li>
+    <label><input type="checkbox" value="h-3">가정용 3kg
+    <input type="range" min="0" max="5">개 (최대 5개) 
+    </label>
+    </li>
+  <li>
+    <label><input type="checkbox" value="h-5">가정용 5kg
+      <input type="range" min="0" max="3" value="1">개 (최대 3개) 
+      <!-- 초기값 1개-->
+    </label>
+    </li>
+</ul>
+<input type="submit" value="주문하기">
+<input type="reset"  value="취소하기">
+
+
+
+<h2> 날짜 입력</h2>
+
+<input type="date">
+<p>년 월 일</p>
+<input type="month">
+<p> 년 월</p>
+<input type="week">
+<p> 년 월 주</p>
+
+<h2> 시간 정하기</h2>
+<input type="time">
+<p> 오전 or 오후</p>
+<input type="datetime-local">
+<p> 년 월 일 오전 or 오후</p>
+
+<!-- 이미지 로그인-->
+<form>
+  <fieldset>
+    <legend>로그인</legend>
+    <label> <input type="text" id="uid"> 아이디</label>
+    <label> <input type="password" id="upw"> 비밀번호</label>
+    <input type="image" src="images/login.png" alt="로그인">
+  </fieldset>
+</form>
+
+<!-- 버튼을 삽입해 자바스크립 실행-->
+<form>
+  <input type="button" value="공지창 열기" onclick="window.open('notice.html')">
+  notice.html열림
+</form>
+
+</body>
+</html>
